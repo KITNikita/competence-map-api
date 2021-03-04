@@ -24,4 +24,4 @@ spring:
 logging:
   config: classpath:log4j2.config/log4j2-dev.xml
 
-allowed-origin: http://localhost:4200
+allowed-origin: http://45.61.48.40:4200
