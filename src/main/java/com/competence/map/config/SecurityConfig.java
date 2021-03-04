@@ -9,6 +9,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
   @Override
   protected void configure(HttpSecurity http) throws Exception {
     http
-        .authorizeRequests().anyRequest().permitAll();
+        .cors().and()
+        .csrf().disable()
+        .authorizeRequests().anyRequest().authenticated()
+        .and()
+        .oauth2Login()
+        .and()
+        .oauth2ResourceServer().jwt();
   }
 }
