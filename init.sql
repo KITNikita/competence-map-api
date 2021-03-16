@@ -5,7 +5,7 @@
 
 #SELECT user,authentication_string,plugin,host FROM mysql.user;
 
-create user competencemapuser identified by 'Mrsalwaysright201096';
+create user competenceuser identified by 'competence12345';
 create database competencemap;
-grant all on competencemap.* to competencemapuser;
+grant all on competencemap.* to competenceuser;
 flush privileges;
