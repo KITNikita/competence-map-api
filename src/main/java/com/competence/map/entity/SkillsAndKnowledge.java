@@ -1,27 +1,26 @@
 package com.competence.map.entity;
 
-import java.util.UUID;
+import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "skills_n_knowledge")
 public class SkillsAndKnowledge {
   @Id
-  @GeneratedValue
-  private UUID id;
+  private String guid;
 
-  @Size(max = 255)
-  @NotBlank
   private String title;
 
-  @NotBlank
-  @Size(max = 1)
+  @Column(length = 1)
   private String type;
 }

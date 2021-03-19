@@ -1,4 +1,4 @@
-INSERT INTO skills_n_knowledge(id, title, type, e_competence_id)
+INSERT INTO skills_n_knowledge(guid, title, type, e_competence_guid)
 VALUES
     ('A.01.K1', 'K1 business strategy concepts', 'K', 'A.01'),
     ('A.01.K2', 'K2 trends and implications of ICT internal or external developments for typical organisations ', 'K', 'A.01'),

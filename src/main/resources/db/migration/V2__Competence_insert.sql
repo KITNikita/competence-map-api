@@ -1,4 +1,4 @@
-INSERT INTO e_competence(id, area, description, title)
+INSERT INTO e_competence(guid, area, description, title)
 VALUES
     ('A.01', 'A', 'Anticipates long term business requirements, influences improvement of organisational process efficiency and effectivenes. Determines the IS model and the enterprise architecture in line with the organisation’s policy and ensures a secure environment. Makes strategic IS policy decisions for the enterprise, including sourcing strategies.', 'A.01. IS and Business Strategy Alignment'),
     ('A.02', 'A', 'Defines, validates and makes applicable service level agreements (SLAs) and underpinning contracts for services offered. Negotiates service performance levels taking into account the needs and capacity of stakeholders and business.', 'A.02. Service Level Management'),

@@ -1,4 +1,4 @@
-INSERT INTO level(id, description, level, e_competence_id)
+INSERT INTO level(guid, description, level, e_competence_guid)
 VALUES
     ('A.01.L4', 'Provides leadership for the construction and implementation of long term innovative IS solutions.', 4, 'A.01'),
     ('A.01.L5', 'Provides IS strategic leadership to reach consensus and commitment from the management team of the enterprise.', 5, 'A.01'),
